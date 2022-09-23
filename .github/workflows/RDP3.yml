@@ -15,7 +15,7 @@ jobs:
         copy nssm.exe C:\Windows\System32
         copy ngrok.exe C:\Windows\System32
     - name: Connect your NGROK account
-      run: .\ngrok.exe authtoken 2Et2lWfqJ4WyF3zYPpmI683dMMt_3QoEenLjPgbi7sjAPsh7x
+      run: .\ngrok.exe authtoken 2FA0K1pnfwb0sc4U6cPsGB55SSe_3kW3Qb6uPkUGz4Zir7rDX
       env:
         NGROK_AUTH_TOKEN: ${{ secrets.NGROK_AUTH_TOKEN3 }}
     - name: Make YML file for NGROK.
