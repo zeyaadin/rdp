@@ -15,9 +15,9 @@ jobs:
     - name: Download Ngrok.
       run: |
         Invoke-WebRequest https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-windows-amd64.zip -OutFile ngrok.zip
-        Invoke-WebRequest https://raw.githubusercontent.com/Jetushack/FREE-RDP-CUSTOM-NAME/master/start.bat -OutFile start.bat
-        Invoke-WebRequest https://raw.githubusercontent.com/Jetushack/FREE-RDP-CUSTOM-NAME/master/download1.jpeg -OutFile wallpaper.bat
-        Invoke-WebRequest https://raw.githubusercontent.com/Jetushack/FREE-RDP-CUSTOM-NAME/master/loop.bat -OutFile loop.bat
+        Invoke-WebRequest https://raw.githubusercontent.com/Riders004/rdp/master/start.bat -OutFile start.bat
+        Invoke-WebRequest https://raw.githubusercontent.com/Riders004/rdp/master/download1.jpeg -OutFile wallpaper.bat
+        Invoke-WebRequest https://raw.githubusercontent.com/Riders004/rdp/master/loop.bat -OutFile loop.bat
     - name: Extract Ngrok File.
       run: Expand-Archive ngrok.zip
     - name: Connect Ngrok.
